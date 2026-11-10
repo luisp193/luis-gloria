@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luis y Gloria</title>
+  <meta name="description" content="La web de Luis y Gloria. Muy pronto.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --fondo: #f6f1ea;
+      --texto: #2a2420;
+      --suave: #7a6e64;
+      --acento: #b5543a;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fondo: #1b1714;
+        --texto: #efe7de;
+        --suave: #a99c90;
+        --acento: #e07a5c;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; }
+    html, body { height: 100%; }
+    body {
+      background: var(--fondo);
+      color: var(--texto);
+      font-family: "Inter", system-ui, sans-serif;
+      display: grid;
+      place-items: center;
+      padding: 24px 16px;
+      text-align: center;
+    }
+    main { max-width: 32rem; }
+    h1 {
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 600;
+      font-size: clamp(2.6rem, 9vw, 4.5rem);
+      line-height: 1.05;
+      letter-spacing: -0.01em;
+    }
+    h1 span { color: var(--acento); font-weight: 400; }
+    p {
+      margin-top: 1.25rem;
+      color: var(--suave);
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    .linea {
+      width: 48px;
+      height: 2px;
+      background: var(--acento);
+      margin: 1.75rem auto 0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Luis <span>&amp;</span> Gloria</h1>
+    <div class="linea"></div>
+    <p>Nuestra web está en camino. Muy pronto, aquí.</p>
+  </main>
+</body>
+</html>
